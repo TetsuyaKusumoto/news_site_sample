@@ -15,7 +15,7 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
   }
 }
 
-.box2
+.box2 {
   nav.menu {
     ul {
       margin: 0;
@@ -43,18 +43,20 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
     }
 
   }
+}
 
-@media (min-width: 768px) {
+
+//@media (min-width: 768px) {
 
 .boxA {
-  &:after {
-    content: "";
-    display: block;
-    clear: both
-  }
+//  &:after {
+//    content: "";
+//    display: block;
+//    clear: both
+//  }
   .box3 {
-    float: left;
-    width: 70%;
+//    float: left;
+//    width: 70%;
     article.kiji {
       h1 {
         margin-top: 0;
@@ -65,12 +67,67 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
         margin-top: 0;
         margin-bottom: 20px;
       }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
     }
   }
   .box4 {
-    float: left;
-    width: 30%;
+//   float: left;
+//    width: 30%;
     .sidemenu {
+      margin-bottom: 30px;
+
+      h1 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        border-bottom: dotted 2px #dddddd;
+        color: #666666;
+        font-size: 18px;
+      }
+      ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      }
+      li a {
+        display: block;
+        padding: 5px;
+        color: #000000;
+        font-size: 14px;
+        text-decoration: none;
+        &:hover {
+          background-color: #eeeeee
+        }
+      }
+    }
+    .osusume {
+      margin-bottom: 30px;
+      h1 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        border-bottom: dotted 2px #dddddd;
+        color: #666666;
+        font-size: 18px;
+      }
+      ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      }
+      li a {
+        display: block;
+        padding: 5px;
+        color: #000000;
+        font-size: 14px;
+        text-decoration: none;
+        &:hover {
+          background-color: #eeeeee
+        }
+      }
+    }
+    .ninki {
       h1 {
         margin-top: 0;
         margin-bottom: 10px;
@@ -97,4 +154,28 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
   }
 }
 
+//}
+
+.copyright p {
+  margin: 0;
+  color: #666666;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .boxA {
+    &:after {
+      content: "";
+      display: block;
+      clear: both
+    }
+    .box3 {
+      float: left;
+      width: 70%;
+    }
+    .box4 {
+      float: left;
+      width: 30%;
+    }
+  }
 }
