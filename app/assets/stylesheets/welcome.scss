@@ -69,7 +69,31 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
   }
   .box4 {
     float: left;
-    width: 30%
+    width: 30%;
+    .sidemenu {
+      h1 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        border-bottom: dotted 2px #dddddd;
+        color: #666666;
+        font-size: 18px;
+      }
+      ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      }
+      li a {
+        display: block;
+        padding: 5px;
+        color: #000000;
+        font-size: 14px;
+        text-decoration: none;
+        &:hover {
+          background-color: #eeeeee
+        }
+      }
+    }
   }
 }
 
