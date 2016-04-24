@@ -3,6 +3,8 @@
 body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
 
 .box1 {
+  padding-top: 8px;
+  padding-bottom: 8px;
   .site {
     h1 {
       margin: 0;
@@ -16,6 +18,7 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
 }
 
 .box2 {
+  background-color: #7cbac1;
   nav.menu {
     ul {
       margin: 0;
@@ -32,12 +35,12 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
       width: auto;
       a {
         display: block;
-        padding: 5px;
+        padding: 15px;
         color: #000000;
         font-size: 14px;
         text-decoration: none;
         &:hover {
-          background-color: #eeeeee;
+          background-color: #75dbe7;
         }
       }
     }
@@ -55,6 +58,8 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
 //    clear: both
 //  }
   .box3 {
+    padding-top: 40px;
+    padding-bottom: 30px;
 //    float: left;
 //    width: 70%;
     article.kiji {
@@ -74,6 +79,8 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
     }
   }
   .box4 {
+    padding-top: 40px;
+    padding-bottom: 30px;
 //   float: left;
 //    width: 30%;
     .sidemenu {
@@ -156,10 +163,15 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
 
 //}
 
-.copyright p {
-  margin: 0;
-  color: #666666;
-  font-size: 14px;
+.box5 {
+  border-top: solid 1px #dddddd;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  .copyright p {
+    margin: 0;
+    color: #666666;
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -172,6 +184,10 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
     .box3 {
       float: left;
       width: 70%;
+      padding-right: 50px;
+      .moz-box-sizing: border-box;
+      .webkit-box-sizing: border-box;
+      box-sizing: border-box;
     }
     .box4 {
       float: left;
