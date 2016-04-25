@@ -78,6 +78,49 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
         max-width: 100%;
         height: auto;
       }
+      .kijiinfo {
+        margin-top: -10px;
+        margin-bottom: 20px;
+        i {
+          margin-right: 5px;
+          color: #aaaaaa;
+          font-size: 20px;
+        }
+      }
+
+      .kijicat {
+        margin-bottom: 25px;
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+        }
+
+        li a {
+          display: block;
+          margin-right: 5px;
+          padding: 3px 5px;
+          border-radius: 2px;
+          background-color: #75dbe7;
+          color: #ffffff;
+          font-size: 12px;
+          text-decoration: none;
+          &:hover {
+            background-color: #94ecf6
+          }
+        }
+
+        ul:after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+        li {
+          float: left;
+          width: auto;
+        }
+
+      }
     }
   }
   .box4 {
