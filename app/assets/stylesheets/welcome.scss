@@ -174,6 +174,41 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
   }
 }
 
+
+@media (max-width: 599px) {
+  .box1 {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    .site {
+      h1 {
+        font-size: 26px;
+      }
+    }
+  }
+  .box2 {
+    nav.menu {
+      li a {
+        padding:  10px 3px;
+        font-size: 11px;
+      }
+    }
+  }
+  .boxA {
+    .box3 {
+      padding-top: 25px;
+      article.kiji {
+        h1 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) and (max-width:767px){
+
+}
+
 @media (min-width: 768px) {
   .boxA {
     &:after {
@@ -194,4 +229,8 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
       width: 30%;
     }
   }
+}
+
+@media (min-width: 1040px){
+
 }
