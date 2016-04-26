@@ -179,6 +179,11 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
         border: none;
         vertical-align: bottom;
       }
+      .text {
+        padding: 5px 10px;
+        background-color: rgba(0,0,0,0.5);
+        color: #ffffff
+      }
       ul {
       margin: 0;
       padding: 0;
@@ -186,13 +191,28 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
       }
       li a {
         display: block;
-        padding: 5px;
+        margin-bottom: 10px;
+        padding: 0px;
         color: #000000;
         font-size: 14px;
         text-decoration: none;
         &:hover {
-          background-color: #eeeeee
+          background-color: #eeeeee;
+          opacity: 0.8;
         }
+      }
+
+      li a {
+        position: relative;
+      }
+      .text {
+        position: absolute;
+        bottom: 0px;
+        left:0px;
+        width: 100%;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
       }
     }
     .ninki {
